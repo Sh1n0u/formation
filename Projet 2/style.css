@@ -1,0 +1,49 @@
+header {
+    position: absolute;
+    width: 100%;
+    top : 0px;
+    left: 0px;
+    display: flex;
+
+
+
+    background-color: gray;
+}
+
+.logo {
+    position: absolute;
+    width: 61.09px;
+    height: 19px;
+    left: 55px;
+    top: 44px;
+}
+
+.logo:hover {
+    position: absolute;
+    width: 61.09px;
+    height: 19px;
+    left: 55px;
+    top: 44px;
+    background: #0065FC;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.navList {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+
+    background-color: aqua;
+}
+
+li {
+    font-family: 'Raleway';
+    list-style: none;
+    margin: 10px;
+
+    background-color: rgb(194, 190, 170);
+}
