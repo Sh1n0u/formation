@@ -78,5 +78,6 @@ header {
 .card img {
     width: 302px;
     height: 389px;
+    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
