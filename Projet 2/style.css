@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    max-width: 1400px;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+header {
+    display: flex;
+    width: auto;
+    height: 126px;
+    justify-content: right;
+}
+
+.logo { /*positionnement logo*/
+    position: absolute;
+    width: 61.09px;
+    height: 19px;
+    top: 44px;
+    left: 55px;
+}
+
+.menu { /* positionnement du menu et paramètrage des boutons*/
+    display: flex;
+    position: absolute;
+    width: 381px;
+    height: 19px;
+    right: 10px;
+    
+    list-style: none;
+    justify-content: flex-end;
+    column-gap: 67px;
+}
+
+.button {
+    padding-top: 46px; /*décallage du bouton par rapport au top */
+    border-top: 2px solid; 
+    border-color: transparent; /*mise en place de la border transparente pour éviter un décalage du texte à l'apparition*/
+    font-style: normal; /*parametrage du texte*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button:active { /* Action changement couleur + barre sélection section */
+    border-top: 2px solid;
+    border-color: #0065FC;
+    font-weight: 500;
+    color: #0065FC;    
+}
