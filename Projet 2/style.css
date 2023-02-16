@@ -1,8 +1,8 @@
 * {
     margin: 0px auto;
-    max-width: 1400px;
-    text-decoration: none;
-    font-family: 'Raleway';
+    max-width: 1400px; /* dimension max de la page */
+    text-decoration: none; /* retrait du soulignage dans les lien hyper texte */
+    font-family: 'Raleway'; /* Police d'écriture de la page */
 }
 
 header {
@@ -12,72 +12,92 @@ header {
 }
 
 .logo {
+    /* dimension du logo */
     width: 61.09px;
     height: 19px;
+    /* position du logo */
     padding-top: 44px;
     padding-left: 55px;
-    float: left;
+    /* permet de garder l'élément à gauche dans le block header */
+    float: left; 
 }
 
-.menu { /* positionnement du menu et paramètrage des boutons*/
+.menu { 
+    /* positionnement du menu */
     display: flex;
     width: 381px;
     height: 100%;
-    right: 10px;
+    float: right;
     
+    /* paramètre du menu */
     list-style: none;
     justify-content: flex-end;
-    column-gap: 67px;
-    float: right;
+    column-gap: 67px; /* espacement entre deux boutons */
 }
 
 .button {
-    padding-top: 46px; /*décallage du bouton par rapport au top */
-    border-top: 2px solid; 
-    border-color: transparent; /*mise en place de la border transparente pour éviter un décalage du texte à l'apparition*/
-    font-style: normal; /*parametrage du texte*/
+    /*décallage du bouton par rapport au top */
+    padding-top: 46px; 
+
+    /*parametrage du texte*/
+    font-style: normal; 
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+
+    /* mise en place de la ligne bleu. sans ça, l'apparition de la ligne bleu décalle les bouton */
+    border-top: 2px solid; 
+    border-color: transparent;
 }
 
-.button:hover { /* Action changement couleur + barre sélection section */
+.button:hover { 
+    /* remplacement de la barre transparente par la barre bleu */
     border-top: 2px solid;
     border-color: #0065FC;
+
+    /* changement de couleur du texte en bleu */
     font-weight: 500;
     color: #0065FC;    
 }
 
-/*-------------------------------------CARD---------------------------*/
+ /* -----Card activitées Marseille----- */
 .activities {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap; /*met les card en colonne si la page est réduite*/
+    justify-content: space-between;
     column-gap: 43px;
     padding-top: 18.47px;
 }
 
 .card {
+    /* dimension de la card */
     width: 302px;
     height: 444.51px;
+
+    /* border + ombre */
     border: 1px solid #D9D9D9;
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 8px 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+
 }
 
 .card:hover {
+    /* animation lors du survol de la card */
     box-shadow: 8px 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
 }
 
 .cardText {
+    /* position du texte dans la card */
     padding: 2px 16px;
 }
 
 .card img {
+    /* dimension de l'image dans la card */
     width: 302px;
     height: 389px;
+
+    /* intégration de l'image dans la card */
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
