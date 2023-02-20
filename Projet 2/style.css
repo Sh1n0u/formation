@@ -1,8 +1,24 @@
 * {
-    margin: 0px auto;
-    max-width: 1400px; /* dimension max de la page */
+    margin: 0px 0px;
     text-decoration: none; /* retrait du soulignage dans les lien hyper texte */
     font-family: 'Raleway'; /* Police d'écriture de la page */
+    color: black;
+}
+
+body{
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 header {
@@ -52,23 +68,94 @@ header {
 .button:hover { 
     /* remplacement de la barre transparente par la barre bleu */
     border-top: 2px solid;
-    border-color: #0065FC;
-
-    /* changement de couleur du texte en bleu */
-    font-weight: 500;
-    color: #0065FC;    
+    border-color: #0065FC;  
 }
 
- /* -----Card activitées Marseille----- */
+.button a:hover {
+    /* changement de couleur du texte en bleu */
+    color: #0065FC;   
+    font-weight: 500;
+}
+
+/* section hébergement */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergment {
+    /* display: flex; */
+    /* justify-content: space-around;
+    align-content: space-around; */
+    width: 880px;
+    height: 626px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.container {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-between;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.most-popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 420px;
+    height: 625px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.item {
+    width: 246px;
+    height: 199px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.item img {
+    width: 235px;
+    height: 124px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.item2 {
+    width: 343px;
+    height: 144px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.item2 img {
+    float: left;
+    width: 137px;
+    height: 134px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+/* -----Card activitées Marseille----- */
 .activities {
     display: flex;
-    flex-wrap: wrap; /*met les card en colonne si la page est réduite*/
     justify-content: space-between;
-    column-gap: 43px;
+    flex-wrap: wrap;
     padding-top: 18.47px;
 }
 
-.card {
+.card-activity {
     /* dimension de la card */
     width: 302px;
     height: 444.51px;
@@ -81,18 +168,18 @@ header {
 
 }
 
-.card:hover {
+.card-activity:hover {
     /* animation lors du survol de la card */
     box-shadow: 8px 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
 }
 
-.cardText {
+.card-text {
     /* position du texte dans la card */
     padding: 2px 16px;
 }
 
-.card img {
+.card-activity img {
     /* dimension de l'image dans la card */
     width: 302px;
     height: 389px;
@@ -100,4 +187,25 @@ header {
     /* intégration de l'image dans la card */
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+
+
+/* -----Footer----- */
+.footer {
+    display: flex;
+    padding-top: 45px;
+    background-color: #f2f2f2;
+    height: 225px;
+    margin-top: 61px;
+    justify-content: space-around;
+}
+
+.section-footer {
+    list-style: none;
+    font-size: 16px;
+}
+
+.section-footer li {
+    margin-bottom: 12px;
 }

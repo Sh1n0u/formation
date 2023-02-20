@@ -9,50 +9,137 @@
         <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
         <title>Booki.com</title> 
     </head>
 
+<body>
     <header>
         <!-- Header du site -->
-        <img class="logo" src="../Projet trainning/assets/Booki.png">
+        <h1><img class="logo" src="../Projet trainning/assets/Booki.png" alt="Logo Booki.com"></h1> 
         <nav>
-            <ul  class="menu">
-                <li class="button">Hébergements</li>
-                <li class="button">Activitées</li>
+            <ul class="menu">
+                <li class="button"><a href="#Hébergement">Hébergements</a></li>
+                <li class="button"><a href="#activitées">Activitées</a></li>
             </ul>
         </nav>
     </header>
 
+
+
     <main>
-        <section class="Herbegment">
-            <h1>Hébergement à Marseille</h1>
+        <section class="hebergment">     <!--- section Hébergement-->
+            <div>
+                <h3>Hébergement à Marseille</h3>
+            </div>
+
+            <div class="container">
+                <article class="item">
+                    <img src="../Projet trainning/assets/Heergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                    <h3>Auberge La Canebière</h3>
+                </article>
+
+                <article class="item">
+                    <img src="../Projet trainning/assets/Heergement/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                    <h3>Hôtel du port</h3>
+                </article>
+
+                <article class="item">
+                    <img src="../Projet trainning/assets/Heergement/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                    <h3>Hôtel Les mouettes</h3>
+                </article>
+
+                <article class="item">
+                    <img src="../Projet trainning/assets/Heergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                    <h3>Hôtel de la mer</h3>
+                </article>
+
+                <article class="item">
+                    <img src="../Projet trainning/assets/Heergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                    <h3>Auberge Le Panier</h3>
+                </article>
+
+                <article class="item">
+                    <img src="../Projet trainning/assets/Heergement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina">
+                    <h3>Hôtel Chez Amina</h3>
+                </article>
+            </div>
+
+            <div>
+                <h3>Afficher Plus</h3>
+            </div>
+
         </section>
-       
-        <section>
-            <!-- Début de la section activitées à Marseille (titre+card) -->
-            <h1>Activitées à Marseille</h1>
+
+        <section class="most-popular">     <!--- section les plus populaires-->
+            <article class="item2">
+                <img src="../Projet trainning/assets/Heergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                <div>
+                    <h3>Hôtel Le soleil du matin</h3>
+                </div>
+            </article>
+
+            <article class="item2">
+                <img src="../Projet trainning/assets/Heergement/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre d'hôtes Au coeur de l'eau">
+                <h3>Chambres d'hôtes Au coeur de l'eau</h3>
+            </article>
+
+            <article class="item2">
+                <img src="../Projet trainning/assets/Heergement/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
+                <h3>Hôtel Bleu et Blanc</h3>
+            </article>
+        </section>
+    </main>   
+    
+    
+
+    <asside>            <!-- Début de la section activitées à Marseille (titre+card) -->
+            <h1 id="activitées">Activitées à Marseille</h1>
             <div class="activities">
-                <a class="card" href="#">
-                    <img src="../Projet trainning/assets/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image Vieux Port">
-                    <div class="cardText"><h4>Vieux port</h4></div>
+                <a class="card-activity" href="#">
+                    <img src="../Projet trainning/assets/activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image Vieux Port">
+                    <div class="card-text"><h4>Vieux port</h4></div>
                 </a>
 
-                <a class="card" href="#">
-                    <img src="../Projet trainning/assets/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image Fort de Pomègues">
-                    <div class="cardText"><h4>Fort de Pomègues</h4></div>
+                <a class="card-activity" href="#">
+                    <img src="../Projet trainning/assets/activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image Fort de Pomègues">
+                    <div class="card-text"><h4>Fort de Pomègues</h4></div>
                 </a>
 
-                <a class="card" href="#">
-                    <img src="../Projet trainning/assets/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
-                    <div class="cardText">  <h4>Parc national des Calanques</h4></div>                 
+                <a class="card-activity" href="#">
+                    <img src="../Projet trainning/assets/activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
+                    <div class="card-text">  <h4>Parc national des Calanques</h4></div>                 
                 </a>
 
-                <a class="card" href="#">
-                    <img src="../Projet trainning/assets/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
-                    <div class="cardText"><h4>Notre-Dame-De-La-Garde</h4></div>
+                <a class="card-activity" href="#">
+                    <img src="../Projet trainning/assets/activity/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
+                    <div class="card-text"><h4>Notre-Dame-De-La-Garde</h4></div>
                 </a>
             </div>
-            
-        </section>
-    </main>
+
+    </asside>
+
+
+
+    <footer class="footer">
+            <ul class="section-footer">
+                <li><h3>A propos</h3></li>
+                <li><a href="#">Fonctionnalité du site</a></li>
+                <li><a href="#">Conditions générales</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+
+            <ul class="section-footer">
+                <li><h3>Nos Hébergements</h3></li>
+                <li><a href="#">Nos hébergements</a></li>
+                <li><a href="#">Proposer votre hôtel</a></li>
+            </ul>
+
+            <ul class="section-footer">
+                <li><h3>Assistance</h3></li>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+    </footer>
+</body>
+</html>
