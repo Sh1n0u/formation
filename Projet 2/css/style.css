@@ -26,12 +26,11 @@ h3 {
 h4 {
     font-weight: 700;
     font-size: 16px;
-    margin-top: 4px;
-    margin-bottom: 9px;
 }
 
 p {
     font-size: 14px;
+    font-weight: 400;
 }
 
 #title-h2-pos {
@@ -120,7 +119,8 @@ header {
 
 
 /* ----- section hébergement ----- */
-main {
+
+.central {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
@@ -157,6 +157,7 @@ main {
     background-color: #f2f2f2;
     border-radius: 20px;
 }
+
 
 .item {
     width: 246px;
@@ -196,6 +197,19 @@ main {
     margin-right: 16px;
 }
 
+.hebergment h4 {
+    margin-top: 4px;
+    margin-bottom: 9px;
+}
+
+.most-popular h4 {
+    margin-top: 16px;
+    margin-left: 152px;
+}
+
+.most-popular p {
+    margin-left: 152px;
+}
 
 
 
