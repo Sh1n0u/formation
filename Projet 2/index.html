@@ -7,6 +7,7 @@
         <meta name="index.html" content="index.html">
         <meta name="author" content="Florian SUNE">
         <link href="../Projet 2/css/style.css" rel="stylesheet">
+        <!-- <link href="../Projet 2/css/normalize.css" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 
 <body>
     <header>
-        <section>         <!-- Header du site -->
+        <section>      
             <h1><img class="logo" src="../Projet 2/assets/Booki.png" alt="Logo Booki.com"></h1>
             <nav>
                 <ul class="menu">
@@ -29,29 +30,54 @@
 
 
     <main>
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p>En plein centre-ville ou en pleine nature</p>
+        <section>
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre-ville ou en pleine nature</p>
 
-        <div>    <!-- Barre de recherche--> 
+            <div class="research-bar">    
+                <div class="dflex">
+                    <div class="icon-location">      
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>      
+                        <input type="search" id="search-bar" class="research" placeholder="   Ville, Pays">
+                        <button class="search-button">Rechercher</button>
+                    </div>
+                </div>
+                <div class="dflex filter-bar">      
+                    <h3>Filtres</h3>
+                    <button class="filter-button">
+                        <i class="fa-solid fa-money-bill-wave"></i>Economique
+                    </button>
 
-        </div>
+                    <button class="filter-button">
+                        <i class="fa-solid fa-child"></i>Familial
+                        
+                    </button>
 
-        <div>    <!-- barre de filtre-->
+                    <button class="filter-button">
+                        <i class="fa-solid fa-heart"></i>Romantique
+                    </button>
 
-        </div>
+                    <button class="filter-button">
+                        <i class="fa-solid fa-dog"></i>Animaux autorisés
+                    </button>
+                </div>
+                <div>    
+                    <p>Plus de 500 logements sont disponible dans cette ville</p>
+                </div>
+            </div>
+        </section>
 
-        <div>    <!-- info complémentaire -->
-            <p>Plus de 500 logements sont disponible dans cette ville</p>
-        </div>
 
-        <div class="central">      
-            <section class="hebergment">     <!--- section Hébergement-->            
+        <section class="central">      
+            <div class="hebergment">           
                 <h2 id="title-h2-pos">Hébergement à Marseille</h2>    
                 <div class="container">
                     <article class="item">
                         <img src="../Projet 2/assets/Hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
                         <div class="card-placement">                        
-                                <h4>Auberge La Canebière</h4>
+                            <h4>Auberge La Canebière</h4>
                             <p>Nuit à partir de 25<strong>€</strong></p>
                             <div class="stars-notation-box">
                                 <i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs"></i>
@@ -119,9 +145,9 @@
                     <h3 id="show-more">Afficher Plus</h3>
                 </div>
 
-            </section>
+            </div>
             
-            <section class="most-popular">     <!--- section les plus populaires-->
+            <div class="most-popular"> 
                 <div class="dflex">
                     <h2 class="title2-h2-pos">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line"></i>
@@ -129,21 +155,22 @@
                 <div class="container2">
                     <article class="item2">
                         <img src="/Projet 2/assets/Hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                        <div>
+                        <div class="slide-content">
                             <h4>Hôtel Le soleil du matin</h4>
                             <p>Nuit à partir de 128€</p>
-                            <div>
+                            <div class="slide-content-star">
                                 <i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs"></i>
                             </div>
                         </div>
+                       
                     </article>
 
                     <article class="item2">
                         <img src="../Projet 2/assets/Hebergement/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre d'hôtes Au coeur de l'eau">
-                        <div>
+                        <div class="slide-content">
                             <h4>Chambres d'hôtes Au coeur de l'eau</h4>
                             <p>Nuit à partir de 71€</p>
-                            <div>
+                            <div class="slide-content-star">
                                 <i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs"></i>
                             </div>
                         </div>
@@ -151,22 +178,22 @@
 
                     <article class="item2">
                         <img src="../Projet 2/assets/Hebergement/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc">
-                        <div>
+                        <div class="slide-content">
                             <h4>Hôtel Bleu et Blanc</h4>
                             <p>Nuit à partir de 68€</p>
-                            <div>
+                            <div class="slide-content-star">
                                 <i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs fa-star-active"></i><i class="fa-solid fa-star fa-xs"></i>
                             </div>
                         </div>
                     </article>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>   
     
     
 
-    <asside>            <!-- Début de la section activitées à Marseille (titre+card) -->
+    <asside>           
             <h2 id="activitées">Activitées à Marseille</h2>
             <div class="activities">
                 <a class="card-activity" href="#">
