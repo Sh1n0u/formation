@@ -1,20 +1,19 @@
+/* ---------------------------- */
+/* paramètre de la page */
+/* ---------------------------- */
 * {
     margin: 0px 0px;
-    text-decoration: none; /* retrait du soulignage dans les lien hyper texte */
+    text-decoration: none;
     font-family: 'Raleway';
-    font-style: normal; /* Police d'écriture de la page */
+    font-style: normal;
     color: black;
 }
-
 
 body {
     max-width: 1400px;
     margin: auto;
+    padding: 0px 50px;
 
-}
-
-section {
-    width: 100%;
 }
 
 h2 {
@@ -41,84 +40,62 @@ p {
     margin: 0px;
 }
 
-
-.title2-h2-pos {
-    margin-left: 37px;
-    margin-top: 41px;
-    margin-bottom: 26px;
+.dflex {
+    display: flex;
 }
 
-#show-more {
-    margin-left: 44px;
-    margin-top: 40px;
-
-}
-
-
-
-
-
-/* -----section header ----- */
+/* -------------- */
+/*     Header     */
+/* -------------- */
 header {
     width: 100%;
     height: 126px;
 }
 
 .logo {
-    /* dimension du logo */
     width: 61.09px;
     height: 19px;
-    /* position du logo */
     padding-top: 44px;
-
-    float: left; 
+    float: left;
 }
 
-.menu { 
-    /* positionnement du menu */
+.menu {
     display: flex;
     margin: 0px;
     width: 381px;
     height: 100%;
     float: right;
-    
-    /* paramètre du menu */
     list-style: none;
     justify-content: flex-end;
-    column-gap: 67px; /* espacement entre deux boutons */
+    column-gap: 67px;
 }
 
-.button {
-    /*décallage du bouton par rapport au top */
-    padding-top: 46px; 
-
-    /*parametrage du texte*/
-    font-style: normal; 
+.menu-button {
+    padding-top: 46px;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-
-    /* mise en place de la ligne bleu. sans ça, l'apparition de la ligne bleu décalle les bouton */
-    border-top: 2px solid; 
+    border-top: 2px solid;
     border-color: transparent;
 }
 
-.button:hover { 
-    /* remplacement de la barre transparente par la barre bleu */
+.menu-button:hover {
     border-top: 2px solid;
-    border-color: #0065FC;  
+    border-color: #0065FC;
 }
 
-.button a:hover {
-    /* changement de couleur du texte en bleu */
-    color: #0065FC;   
+.menu-button a:hover {
+    color: #0065FC;
     font-weight: 500;
 }
 
+/* ---------------------------- */
+/*      Barre de recherche      */
+/* ---------------------------- */
 .research-bar {
     width: 950px;
     margin-top: 20px;
     margin-bottom: 40px;
-
 }
 
 .research {
@@ -148,6 +125,18 @@ header {
     cursor: pointer ;
 }
 
+.icon-location {
+    background-color: #f2f2f2;
+    padding-left: 18px;
+    padding-top: 16px;
+    padding-right: 15px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+/* ------------------------ */
+/*      Barre de filtre     */
+/* ------------------------ */
 .filter-bar {
     justify-content: space-around;
     width: 876px;
@@ -176,21 +165,44 @@ header {
     align-items: center;
     margin-top: 20px;
 }
-/* ----- section hébergement ----- */
 
-.title-hebergment {
-    margin-left: 40px;
-    margin-top: 42px;
-    margin-bottom: 23px;
+.icon-info {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 10px;
+
 }
 
+/* -------------------------------------------------- */
+/*      Partie centrale (Hebergement + populaire      */
+/* -------------------------------------------------- */
 .central {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
 
-.hebergment {
+.item:hover, .item2:hover, .item-activity:hover {
+    box-shadow: 8px 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.item-content p, .item2-content p {
+    font-size: 14px;
+}
+
+/* ----------------------------- */
+/*      Section hébergement      */
+/* ----------------------------- */
+.title-accommodation {
+    margin-left: 40px;
+    margin-top: 42px;
+    margin-bottom: 23px;
+}
+
+.accommodation {
     width: 880px;
     height: auto;
     background-color: #f2f2f2;
@@ -205,23 +217,6 @@ header {
     flex-wrap: wrap;
 }
 
-.container2 {
-    display: flex;
-    margin-left: 37px;
-    margin-right: 37px;
-    justify-content: space-between;
-    row-gap: 33px;
-    flex-wrap: wrap;
-}
-
-.most-popular {
-    width: 420px;
-    height: 625px;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-}
-
-
 .item {
     width: 246px;
     height: 199px;
@@ -229,11 +224,6 @@ header {
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin: 15px
-}
-
-.item:hover, .item2:hover, .card-activity:hover {
-    box-shadow: 8px 4px 8px 0 rgba(0,0,0,0.4);
-    transition: 0.3s;
 }
 
 .item img {
@@ -244,13 +234,61 @@ header {
     object-fit: cover;
 }
 
+.item-content {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.item-content h4 {
+    margin-top: 4px;
+    margin-bottom: 9px;
+}
+
+.item-content-star {
+    position: absolute;
+    bottom: 5px;
+}
+
+#show-more {
+    margin-left: 44px;
+    margin-top: 40px;
+}
+
+/* ------------------------------------ */
+/*      Section les plus populaire      */
+/* ------------------------------------ */
+.most-popular {
+    width: 420px;
+    height: 625px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.title-most-popular {
+    margin-left: 37px;
+    margin-top: 41px;
+    margin-bottom: 26px;
+}
+
+.most-popular-icon {
+    justify-content: space-between;
+}
+
+.container2 {
+    display: flex;
+    margin-left: 37px;
+    margin-right: 37px;
+    justify-content: space-between;
+    row-gap: 33px;
+    flex-wrap: wrap;
+}
+
 .item2 {
     width: 343px;
     height: 144px;
     background: #FFFFFF;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
 }
 
 .item2 img {
@@ -263,87 +301,57 @@ header {
     padding-right: 16px;
 }
 
-.slide-content {
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-.slide-content h4 {
-    margin-top: 4px;
-    margin-bottom: 9px;
-}
-
-.slide-content p, .slide2-content p {
-    font-size: 14px;
-}
-
 .item2 h4 {
     margin-bottom: 7px;
 }
 
-.slide2-content {
+.item2-content {
     height: 100%;
     padding-top: 16px;
     padding-bottom: 12px;
     padding-right: 12px;
 }
 
-.slide-content-star {
-    position: absolute;
-    bottom: 5px;
-}
-
-.slide2-content-star {
+.item2-content-star {
     position: absolute;
     bottom: 10px;
     left: 164px;
 }
 
-
-/* ----- Section activitées Marseille----- */
+/* -------------------------------------- */
+/*      Section activité à Marseille      */
+/* -------------------------------------- */
 .activities {
     display: flex;
     justify-content: space-between;
-    
     flex-wrap: wrap;
     padding-top: 18.47px;
 }
 
-.card-activity {
-    /* dimension de la card */
-    width: 302px;
-    height: 444.51px;
-
-
-    /* border + ombre */
-    border: 1px solid #D9D9D9;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 8px 4px 8px 0 rgba(0,0,0,0.2);
-
+.item-activity {
+   width: 302px;
+   height: 444.51px;
+   border: 1px solid #D9D9D9;
+   border-radius: 20px;
+   box-sizing: border-box;
+   box-shadow: 8px 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.card-text {
-    /* position du texte dans la card */
+.item-text {
     padding-top: 12px;
     padding-left: 16px;
 }
 
-.card-activity img {
-    /* dimension de l'image dans la card */
+.item-activity img {
     width: 302px;
-    height: 389px;
-
-    /* intégration de l'image dans la card */
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+   height: 389px;
+   object-fit: cover;
+   border-radius: 20px 20px 0px 0px;
 }
 
-
-
-
-
-/* ----- Section Footer----- */
+/* ------------------------ */
+/*      Section Footer      */
+/* ------------------------ */
 .footer {
     display: flex;
     padding-top: 45px;
@@ -373,11 +381,9 @@ header {
     margin-bottom: 12px;
 }
 
-
-
-
-
-/* ----- Icone ----- */
+/* ----------------------- */
+/*      Section Icone      */
+/* ----------------------- */
 .fa-star {
     color: #f2f2f2;
 }
@@ -390,27 +396,7 @@ header {
     margin-left: 118px;
     margin-top: 46px;
     color: #0065FC;
-}
-
-.dflex {
-    display: flex;
-}
-
-.icon-location {
-    background-color: #f2f2f2;
-    padding-left: 18px;
-    padding-top: 16px;
-    padding-right: 15px;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-}
-.icon-info {
-    width: 24px;
-    height: 24px;
-    border: 1px solid #F2F2F2;
-    border-radius: 50%;
-    margin-right: 10px;
-
+    padding-right: 40px;
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
@@ -424,45 +410,56 @@ header {
     margin-top: 3px;
 }
 
-/* Media querie */
-
+/* --------------------------------------- */
+/*      Section Media Querie Tablette      */
+/* --------------------------------------- */
 @media all and (max-width: 992px) {
 
-.central {
-    display: block;
-}
+    .central {
+        display: block;
+    }
 
-.most-popular {
-    width: 883px;
-    height: 278px;
-    margin-top: 53px;
-}
+    .most-popular {
+        width: 883px;
+        height: 278px;
+        margin-top: 53px;
+    }
 
-.container2 {
-    flex-wrap: nowrap;
-}
+    .container2 {
+        flex-wrap: nowrap;
+    }
 
-.item2 {
-    width: 252px;
-    height: 144px;
-}
+    .item2 {
+        width: 252px;
+        height: 144px;
+    }
 
-.item2 p {
-    font-size: 13px;
-}
+    .item2 p {
+        font-size: 13px;
+    }
 
-.item2 img {
-    width: 106px;
-    height: 134px;
-}
+    .item2 img {
+        width: 106px;
+        height: 134px;
+    }
 
-h4 {
-    font-size: 14px;
+    h4 {
+        font-size: 14px;
 
-}
+    }
 
-.slide2-content-star {
-    left: 130px;
-}
+    .slide2-content-star {
+        left: 130px;
+    }
 
+    .card-activity {
+        width: 182px;
+        height: 267px;
+
+    }
+
+    .card-activity img {
+        width: 182px;
+        height: 211px;
+    }
 }
