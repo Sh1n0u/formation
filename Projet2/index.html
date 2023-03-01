@@ -14,62 +14,68 @@
         <title>Booki.com</title>
     </head>
     <body>
-        <header>
-            <section>
-                <h1><img class="logo" src="../Projet2/assets/Booki.png" alt="Logo Booki.com"></h1>
+        <header class="header">
+            <div class="logo-box">
+                <img class="logo" src="../Projet2/assets/Booki.png" alt="Logo Booki.com">
+            </div>
+            <div class="nav-box">
                 <nav>
                     <ul class="menu">
                         <li class="menu-button"><a href="#hebergement">Hébergements</a></li>
                         <li class="menu-button"><a href="#activitées">Activitées</a></li>
                     </ul>
                 </nav>
-            </section>
+            </div>
         </header>
         <main>
             <section>
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre-ville ou en pleine nature</p>
+                <div class="title-search">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>
 
-                <div class="research-bar">
-                    <div class="dflex">
-                        <div class="icon-location">
-                            <i class="fa-solid fa-location-dot"></i>
+                    <div class="research-tool">
+                        <div class="dflex reseach-bar">
+                            <div class="icon-location">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <form action="" method="post">
+                                    <input type="search" class="research" placeholder="Ville, Pays">
+                                </form>
+                            </div>
+                            <button class="search-button">Rechercher</button>
+                            <div class="magnifier">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
                         </div>
-                        <div>
-                            <form action="" method="post">
-                                <input type="search" class="research" placeholder="Ville, Pays">
-                            </form>
+                        <div class="dflex filter-bar">
+                            <h3>Filtres</h3>
+                            <button class="filter-button">
+                                <i class="fa-solid fa-money-bill-wave"></i>Economique
+                            </button>
+
+                            <button class="filter-button">
+                                <i class="fa-solid fa-child"></i>Familial
+
+                            </button>
+
+                            <button class="filter-button">
+                                <i class="fa-solid fa-heart"></i>Romantique
+                            </button>
+
+                            <button class="filter-button">
+                                <i class="fa-solid fa-dog"></i>Animaux autorisés
+                            </button>
                         </div>
-                        <button class="search-button">Rechercher</button>
-                    </div>
-                    <div class="dflex filter-bar">
-                        <h3>Filtres</h3>
-                        <button class="filter-button">
-                            <i class="fa-solid fa-money-bill-wave"></i>Economique
-                        </button>
-
-                        <button class="filter-button">
-                            <i class="fa-solid fa-child"></i>Familial
-
-                        </button>
-
-                        <button class="filter-button">
-                            <i class="fa-solid fa-heart"></i>Romantique
-                        </button>
-
-                        <button class="filter-button">
-                            <i class="fa-solid fa-dog"></i>Animaux autorisés
-                        </button>
-                    </div>
-                    <div class="info">
-                        <div class="icon-info">
-                            <i class="fa-solid fa-info"></i>
+                        <div class="info">
+                            <div class="icon-info">
+                                <i class="fa-solid fa-info"></i>
+                            </div>
+                            <p>Plus de 500 logements sont disponible dans cette ville</p>
                         </div>
-                        <p>Plus de 500 logements sont disponible dans cette ville</p>
                     </div>
                 </div>
             </section>
-
 
             <section class="central">
                 <div class="accommodation">
@@ -175,7 +181,7 @@
                 </div>
 
                 <div class="most-popular">
-                    <div class="dflex most-popular-icon">
+                    <div class="most-popular-icon">
                         <h2 class="title-most-popular">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
@@ -225,7 +231,9 @@
         </main>
 
         <aside>
-            <h2 id="activitées">Activitées à Marseille</h2>
+            <div class="title-activities">
+                <h2 id="activitées">Activitées à Marseille</h2>
+            </div>
             <div class="activities">
                 <a class="item-activity" href="#">
                     <img src="../Projet2/assets/activity/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image Vieux Port">
