@@ -13,7 +13,6 @@ body {
     max-width: 1400px;
     margin: auto;
     padding: 0px 50px;
-
 }
 
 h2 {
@@ -152,6 +151,7 @@ header {
 /*      Barre de filtre     */
 /* ------------------------ */
 .filter-bar {
+    display: flex;
     justify-content: flex-start;
     width: auto;
     align-items: center;
@@ -169,8 +169,11 @@ header {
     background-color: white;
     font-size: 17px;
     font-weight: 700;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0px 30px 0px 30px;
+}
+
+.button-selection {
+    display: flex;
 }
 
 .filter-button:hover {
@@ -214,9 +217,7 @@ header {
 /*      Section hébergement      */
 /* ----------------------------- */
 .title-accommodation {
-    margin-left: 40px;
-    margin-top: 42px;
-    margin-bottom: 23px;
+    margin: 42px 0px 23px 40px;
 }
 
 .accommodation {
@@ -252,13 +253,11 @@ header {
 }
 
 .item-content {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin: 0px 16px 0px 16px;
 }
 
 .item-content h4 {
-    margin-top: 4px;
-    margin-bottom: 9px;
+    margin: 4px 0px 9px 0px;
 }
 
 .item-content-star {
@@ -268,7 +267,7 @@ header {
 
 #show-more {
     margin-left: 44px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 /* ------------------------------------ */
@@ -384,11 +383,11 @@ header {
     padding: 0px;
 }
 
-.a-propos {
+.in-regards-to {
     width: 415px;
 }
 
-.nos-hebergements {
+.our-accommodations {
     width: 415px;
 }
 
@@ -451,6 +450,13 @@ header {
     .filter-bar {
         justify-content: space-between;
     }
+
+    .button-selection{
+        margin-top: 10px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .filter-button {
         margin: 0px;
     }
@@ -517,18 +523,16 @@ header {
     .footer {
         width: auto;
     }
-    .a-propos, .nos-hebergements {
+    .in-regards-to, .our-accommodations {
         width: 283px;
     }
 
     .assistance {
         width: 200px;
     }
-
 }
 
 @media all and (max-width: 768px) {
-
     /* ------------------------- */
     /*     Paramètre général     */
     /* ------------------------- */
@@ -629,6 +633,25 @@ header {
 
     .title-search {
         margin-left: 20px;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .button-selection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .filter-button {
+        width: 150px;
+        height: 50px;
+        margin: 10px;
+        font-size: 11px;
+        padding: 0px 0px 0px 15px;
     }
 
     /* ----------------------------- */
@@ -747,11 +770,11 @@ header {
         padding: 30px;
     }
 
-    .a-propos {
+    .in-regards-to {
         width: auto;
     }
 
-    .nos-hebergements {
+    .our-accommodations {
         width: auto;
     }
 
