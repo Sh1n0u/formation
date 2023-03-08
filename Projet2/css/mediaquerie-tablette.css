@@ -1,0 +1,48 @@
+@media all and (min-width: 768px) and (max-width: 992px) {
+    /* -------------- */
+    /* Section Search */
+    /* -------------- */
+    .filter-bar {
+        justify-content: space-between;
+    }
+
+    .button-selection {
+        width: 100%;
+    }
+    /* --------------- */
+    /* Section Central */
+    /* --------------- */
+    .central {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .accommodation {
+        width: auto;
+    }
+
+    .most-popular {
+        width: auto;
+        margin: 20px 0px;
+    }
+
+    /* -------------------- */
+    /* Section Most Popular */
+    /* -------------------- */
+    .item2-box {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    /* ----------------- */
+    /* Section Activitée */
+    /* ----------------- */
+    .item-activity {
+        max-height: 267px;
+    }
+
+    .item-activity img {
+        height: 80%;
+
+    }
+
+}
