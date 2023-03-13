@@ -6,8 +6,12 @@
         justify-content: space-between;
     }
 
+    .research {
+        width: 100%;
+    }
     .button-selection {
         width: 100%;
+        margin-top: 15px;
     }
     /* --------------- */
     /* Section Central */
@@ -44,5 +48,4 @@
         height: 80%;
 
     }
-
 }

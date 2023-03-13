@@ -1,0 +1,192 @@
+@media all and (max-width: 768px) {
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .wdh100 {
+        width: 100%;
+    }
+
+    /* -------------- */
+    /* Section Header */
+    /* -------------- */
+    .header {
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .logo-box {
+        width: 100%;
+    }
+
+    .logo {
+        display: block;
+        margin: auto;
+    }
+
+    .menu {
+        width: auto;
+        padding: 0px;
+        column-gap: 0px;
+        justify-content: space-around;
+    }
+
+    .nav-box {
+        width: 100%;
+        display: block;
+        border-bottom: 3px solid;
+        border-color: #F2F2F2;
+    }
+
+    .menu-button {
+        display: flex;
+        width: 50%;
+        padding-bottom: 23px;
+        justify-content: center;
+    }
+
+    .menu-button:hover {
+        border-top: none;
+        border-bottom: 3px solid;
+        border-color: #0065FC;
+    }
+
+    .menu-button a:hover {
+        border-top: none;
+        color: #0065FC;
+        font-weight: 500;
+    }
+    /* ---------------- */
+    /* Section Research */
+    /* ---------------- */
+    .section-research {
+        padding: 0px 20px;
+    }
+
+    .research-bar {
+        display: flex;
+        width: 100%;
+    }
+
+    .button-selection {
+        margin-top: 15px;
+        padding: 15px 0px;
+        margin: 0px;
+        width: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .icon-location {
+        width: 7%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .filter-bar {
+        display: block;
+    }
+
+    .filter-button {
+        width: 40%;
+        font-size: 11px;
+    }
+
+    .research {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .magnifier {
+        display: flex;
+        width: 7%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --------------- */
+    /* Section Central */
+    /* --------------- */
+    .central {
+        flex-direction: column-reverse;
+    }
+
+    .most-popular {
+        width: auto;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .accommodation {
+        width: auto;
+        border-radius: 0px;
+        background-color: white;
+    }
+    /* --------------------- */
+    /* Section Accommodation */
+    /* --------------------- */
+    .item {
+        width: 100%;
+    }
+
+    .item-img {
+        height: 60%;
+    }
+
+    .item-description {
+        height: 40%;
+    }
+
+    .show-more {
+        display: none;
+    }
+    /* -------------------- */
+    /* Section Most Popular */
+    /* -------------------- */
+    .item2-box {
+        flex-wrap: wrap;
+    }
+    /* ---------------- */
+    /* Section Activity */
+    /* ---------------- */
+    .title-activities {
+        padding-left: 20px;
+    }
+    .item-activity {
+        width: 100%;
+        height: 190px;
+    }
+
+    .activities {
+        width: auto;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+
+    .item-activity img {
+        height: 83%;
+    }
+    /* -------------- */
+    /* Section Footer */
+    /* -------------- */
+    .footer {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+    }
+
+    .in-regards-to, .our-accommodations, .assistance {
+        width: 100%;
+    }
+}
